@@ -8,5 +8,5 @@ numpy
 matplotlib
 Flask
 fastapi
-scikit_learn\
+scikit_learn
 gunicorn
