@@ -1,0 +1,29 @@
+#image{
+	height:50px;
+	width:50px;
+}
+
+.heading{
+	background: url("car.png");
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size:1447px 527px;
+	
+}
+
+.hdfnt{
+	background-color:rgba(250, 250, 210, 0.60);
+	font-family: Copperplate, Papyrus, fantasy;
+	font-weight: bold;
+	
+}
+
+#wholebg{
+	background-color:rgba(255, 153, 0, 0.30);
+}
+
+.ret_val{
+	background-color:rgba(250, 250, 210, 0.60);
+	font-family: Cursive, "Lucida Handwriting";
+	font-weight: bold;	
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Car Price Prediction </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bg.css')}}" />
+</head>
+
+<body>
+	<div class="container">
+	<form action="{{ url_for('predict')}}" method="post">
+		
+		<div id="wholebg">
+		<div class="jumbotron text-center heading "> 
+			<div class ="container hdfnt text-body">
+						<h1 class="display-2">Price Prediction</h1>
+						<p style="font-size:24px;">Fill the fields below and get the PRICE!</p>
+			</div>
+		</div>
+		
+		
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 mb-4">
+						<div class="col text-center">
+							<h5>Distance travelled by the car</h5>
+							<b><input id="first" name="Kms_Driven" type="number " placeholder="Enter in kms"></b>
+						</div>
+					</div>
+					<div class="col-sm-6 mb-4">
+						<div class="col text-center">
+							<h5>Showroom Price of the Car</h5>
+							<b><input id="second" name="Present_Price" type="number " placeholder="Enter in lakhs"></b>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 mt-4">
+						<div class="col text-center">
+							<h5>Production Year of the Car</h5>
+							<b><input id="third" name="Year" type="number " placeholder="Enter Year"></b>
+						</div>
+					</div>
+					<div class="col-sm-6 mt-4">
+						<div class="col text-center">
+							<h5>Number of previous owners of the car</h5>
+							<b><input id="fourth" name="Owner" type="number " placeholder="Enter number"></b>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="container text-center form-group" >
+				<div class="row">
+					<div class="col mt-4">
+						<h5>Fuel Type</h5>
+						<b> <select name="Fuel_Type_Petrol" id="fifth" > 
+								<option value="" selected disabled>- Fuel Type -</option>
+								<option value="Petrol">Petrol</option>
+								<option value="Diesel">Diesel</option>
+								<option value="CNG">CNG</option> 
+							</select>
+						</b>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container text-center form-group" >
+				<div class="row">
+					<div class="col mt-4">
+						<h5>Seller Type</h5>
+						<b> <select name="Seller_Type_Individual" id="sixth">
+								<option value="" selected disabled>- Seller Type -</option>
+								<option value="Individual">Individual</option>
+								<option value="Dealer">Dealer</option> 
+							</select>
+						</b>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container text-center form-group" >
+				<div class="row">
+					<div class="col mt-4">
+						<h5>Transmission</h5>
+						<b> <select class="form control" name="Transmission_Manual" id="seventh"> 
+								<option value="" selected disabled>- Transmission Type -</option>
+								<option value="Manual">Manual</option>
+								<option value="Automatic">Automatic</option> 
+							</select>
+						</b>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center" >
+				<div class="row">
+					<div class="col mt-5 mb-5">
+						<button type="submit" class="btn btn-info">Predict</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	</form>
+	<br>
+		<div class="ret_val text-center">
+			<h2>{{ Predicted_Price }}</h2>
+		</div>
+	</br>
+
+		
+			<div class="jumbotron text-center align-bottom ending">
+				<p style="font-size:24px;" class="pb-4">Contact Here</p>
+				<div class="row pt-5">
+					<div class="col-4">
+						<a href="https://github.com/akzenith"><img id='image' src='/static/github.png'></a>
+					</div>
+					<div class="col-4">
+						<a href="https://www.linkedin.com/in/aman-kothari-b598a1157/"><img id='image' src='/static/linkedin.png'></a>
+					</div>
+					<div class="col-4">	
+						<a href="https://www.kaggle.com/akzenith"><img id='image' src='/static/kaggle.png'></a>
+					</div>
+				</div>	
+			</div>
+			
+	</div>
+
+
+	
+	
+</body>
+
+
+</html>
