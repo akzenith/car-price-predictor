@@ -24,4 +24,4 @@ threadpoolctl
 urllib3
 Werkzeug
 wincertstore
-serve-favicon
+serve_favicon
