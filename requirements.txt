@@ -8,5 +8,5 @@ pydantic
 jsonify
 requests
 fastapi
-scikit_learn
+scikit_learn==0.21.3
 gunicorn
