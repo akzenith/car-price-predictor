@@ -1,5 +1,5 @@
 Flask==1.0.2
 requests==2.18.4
 jsonify==0.5
-scikit_learn==1.0
+scikit_learn==0.23.1
 gunicorn
